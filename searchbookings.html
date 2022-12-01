@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Selecting a driver and destianation</title>
+</head>
+<body bgcolor="brown">
+<h2>PLEASE BOOK YOUR RIDE HERE AND IF YOU CANCEL YOUR BOOKING, 20 MALUTI WILL BE CHARGED!!!!!!!</h2>
+<form method="post" action="booknow.php">
+<label>Driver_First_Name</label>
+<select name="fname">
+	<option value="Lucky">Lucky</option>
+	<option value="James">James</option>
+	<option value="">Groot</option>
+	<option value="Skirtz">Skirtz</option>
+	<option value="Moulo">Moulo</option>
+	<option value="PJ">PJ</option>
+	<option value="Dax">Dax</option>
+	<option value="Thor">Thor</option>
+	<option value="Erick">Erick</option>
+	<option value="Tony">Tony</option>
+<select><p>
+<label>Driver_Last_Name</label>
+<select name="lname">
+	<option value="Brollin">Brollin</option>
+	<option value="Banner">Banner</option>
+	<option value="Rocket">Rocket</option>
+	<option value="Motsoene">Motsoene</option>
+	<option value="Tswene">Tswene</option>
+	<option value="Conscious">Conscious</option>
+	<option value="Loki">Loki</option>
+	<option value="Hakweye">Hakewye</option>
+	<option value="Architect">Architect</option>
+	<option value="Stark">Stark</option>
+<select><p>
+<label>FROM_Destination</label>
+<select name="fromdestinations">
+	<option value="Thetsane">Thetsane</option>
+	<option value="Hlotse">Hlotse</option>
+	<option value="Roma">Roma</option>
+	<option value="Maputsoe">Maputsoe</option>
+	<option value="Ha Leqele">Ha Leqele</option>
+	<option value="Mokhotlong">Mokhotlong</option>
+	<option value="Qwaling">Qwaling</option>
+	<option value="Thaba Tseka">Thaba Tseka</option>
+	<option value="Mafeteng">Mafeteng</option>
+	<option value="Katse">Katse</option>
+<select><p>
+<label>TO_Destination</label>
+<select name="todestinations">
+	<option value="Thetsane">Thetsane</option>
+	<option value="Hlotse">Hlotse</option>
+	<option value="Roma">Roma</option>
+	<option value="Maputsoe">Maputsoe</option>
+	<option value="Ha Leqele">Ha Leqele</option>
+	<option value="Mokhotlong">Mokhotlong</option>
+	<option value="Qwaling">Qwaling</option>
+	<option value="Thaba Tseka">Thaba Tseka</option>
+	<option value="Mafeteng">Mafeteng</option>
+	<option value="Katse">Katse</option>
+<select><p>
+<label>Car_Make</label>
+<select name="make">
+	<option value="Toyota">Toyota</option>
+	<option value="Nissan">Volkswagen</option>
+	<option value="Honda">Honda</option>
+	<select><p>
+	<label>Car_Model</label>
+<select name="model">
+	<option value="Corolla">Corolla</option>
+	<option value="Etios">Etios</option>
+	<option value="Golf 5">Demio</option>
+	<option value="Fit">Fit</option>
+	<option value="Ballade">Ballade</option>
+	<option value="Maybach">Quantum</option>
+	<select><p>
+<label>Car_Color</label>
+<select name="color">
+	<option value="Black">Black</option>
+	<option value="Red">Red</option>
+	<option value="White">White</option>
+	<option value="Blue">Blue</option>
+	<option value="Grey">Grey</option>
+	<option value="Brown">Brown</option>
+	<select><p>
+Date<input type="date" required name="date" placeholder="date picker"><p>
+Time<input type="time" required name="time" placeholder="time of your ride"><p>
+<button type="submit> name="submit">Book Now</button>
+</form>
+<form action="frontpage.html" method="post">
+<button type="submit">Logout</button>
+</form>
+<form action="cancel.html" method="get">
+<button type="submit">Canel</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<html>
+<head>
+<script type = "text/javascript">
+
+function price()
+{
+var FROM_Destination  = document.getElementById("fromdestination").value  
+var TO_Destination = document.getElementById("todestination").value  
+
+if ( FROM_Destination == "Thetsane" && TO_Destination == "Qwaling" )
+	{
+	    Total_price= ( 2.5 * 10 );
+	
+		alert( "Total fee for this ride is M" + Total_price );
+	}
+
+else if ( FROM_Destination == "Ha Leqele" && TO_Destination == "Hlotse" )
+	{
+	    Total_price= ( 2.5 * 150 );
+	
+		alert( "Total fee for this ride is M" + Total_price );
+	}
+
+else if ( FROM_Destination == "Thaba Tseka" && TO_Destination == "Roma" )
+	{
+	    Total_price= ( 2.5 * 250 );
+	
+		alert( "Total fee for this ride is M" + Total_price );
+	}
+
+else if ( FROM_Destination == "Thetsane" && TO_Destination == "Roma" )
+	{
+	    Total_price= ( 2.5 * 45 );
+	
+		alert( "Total fee for this ride is M" + Total_price );
+	
+	}
+else if ( FROM_Destination == "Maputsoe" && TO_Destination == "Mokhotlong" )
+	{
+	    Total_price= ( 2.5 * 200 );
+	
+		alert( "Total fee for this ride is M" + Total_price );
+	}
+	
+else if ( FROM_Destination == "Hlotse" && TO_Destination == "Mafeteng" )
+	{
+	    Total_price= ( 2.5 * 40 );
+	
+		alert( "Total fee for this ride is M" + Total_price );
+	}
+	
+else if ( FROM_Destination == "Ha Leqele" && TO_Destination == "Qwaling" )
+	{
+	    Total_price= ( 2.5 * 5 );
+	
+		alert( "Total fee for this ride is M" + Total_price );
+	}
+	
+else if ( FROM_Destination == "Thetsane" && TO_Destination == "Katse" )
+	{
+	    Total_price= ( 2.5 * 25 );
+	
+		alert( "Total fee for this ride is M" + Total_price );
+	}
+	
+else if ( FROM_Destination == "Roma" && TO_Destination == "Hlotse" )
+	{
+	    Total_price= ( 2.5 * 55 );
+	
+		alert( "Total fee for this ride is M" + Total_price );
+	}
+	
+else if ( FROM_Destination == "Katse" && TO_Destination == "Hlotse" )
+	{
+	    Total_price= ( 2.5 * 35 );
+	
+		alert( "Total fee for this ride is M" + Total_price );
+	}
+}
+</script>
+</head>
+<body style="background-color:brown;">
+<h1>PLEASE CALCULATE THE RIDING FEE HERE!!</h1>
+<form method="post" action="booknow.php">
+<label>FROM_Destiantion</label>
+<select id="fromdestination">
+	<option value="Thetsane">Thetsane</option>
+	<option value="Hlotse">Hlotse</option>
+	<option value="Roma">Roma</option>
+	<option value="Maputsoe">Maputsoe</option>
+	<option value="Ha Leqele">Ha Leqele</option>
+	<option value="Mokhotlong">Mokhotlong</option>
+	<option value="Qwaling">Qwaling</option>
+	<option value="Thaba Tseka">Thaba Tseka</option>
+	<option value="Mafeteng">Mafeteng</option>
+	<option value="Katse">Katse</option>
+<select><p>
+<label>TO_Destiantion</label>
+<select id="todestination">
+	<option value="Thetsane">Thetsane</option>
+	<option value="Hlotse">Hlotse</option>
+	<option value="Roma">Roma</option>
+	<option value="Maputsoe">Maputsoe</option>
+	<option value="Ha Leqele">Ha Leqele</option>
+	<option value="Mokhotlong">Mokhotlong</option>
+	<option value="Qwaling">Qwaling</option>
+	<option value="Thaba Tseka">Thaba Tseka</option>
+	<option value="Mafeteng">Mafeteng</option>
+	<option value="Katse">Katse</option>
+<select><p>
+<input  type="button"  value="Calculate" onclick="price()">
+<br><p>Please click<a href = "selectrides.html"> SEARCH</a> to see make your booking now</p>
+</body>
+</html>

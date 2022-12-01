@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>
+</title>
+<style>
+form { color:white}
+legend {color:00ffff}
+</style>
+<body background="images1.jpeg" >
+<h4>
+<form name="input" action="insert_in_client.php" method="post">
+<fieldset style="border-color:pink" color="blue">
+<legend>Client account creation</legend>
+<p>Personal Information</p>
+<p>First_Name <input type="text" required name="First_Name" placeholder="First_Name" ></p>
+<p>Last_Name <input type="text" required name="Last_Name" placeholder="Last_Name"> </p>
+<p>E-mail <input type="varchar" required name="mail" placeholder="e_mail"></p>
+<p>Phone_Number <input type="number" required name="Contacts" placeholder="Phone_Number"></p>
+<fieldset style="border-color:pink">
+<p>Username <input type="text" required name="User_name" placeholder="User_name" ></p>
+<p>Password <input type="password" required name="Password" placeholder="Password"></p>
+<p>Confirm <input type="password" required name="Confirm" placeholder="Password" ></p>
+<input type="submit" value="Submit" onclick="account()">
+</form> 
+<form name="input" action="frontpage.html" method="get">
+<input type="submit" value="Back to Main Menu"> <br>
+</body>
+</html>

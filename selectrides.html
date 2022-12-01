@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Selecting a driver</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            table tr:not(:first-child){
+                cursor: pointer;transition: all .25s ease-in-out;
+            }
+            table tr:not(:first-child):hover{background-color: #0000ff;}
+        </style>
+        
+</head>
+<body bgcolor="green" >
+<font color="00ffff">Please book your ride here!!! </font><p></p>
+<table rules="all" border="2" id="search" style="border-colapse: collapse;" color="green">
+	<tr>
+		<th style="width:80px">Driver_First_Name</th>
+		<th style="width:80px">Driver_Last_Name</th>
+		<th style="width:80px">FROM_Destination</th>
+		<th style="width:80px">TO_Destination</th>
+		<th style="width:80px">Car_Make</th>
+		<th style="width:80px">Car_Model</th>
+		<th style="width:80px">Car_color</th>
+	</tr>
+	<tr>
+		<td>Thanos</td>
+		<td>Brollin</td>
+		<td>Thetsane</td>
+		<td>Qwaling</td>
+		<td>Toyata</td>
+		<td>Corrolla</td>
+		<td>White</td>
+	</tr>
+	<tr>
+		<td>Groot</td>
+		<td>Rocket</td>
+		<td>Hlotse</td>
+		<td>Qwaling</td>
+		<td>Volkswagen</td>
+		<td>Demio</td>
+		<td>Black</td>
+	</tr>
+	<tr>
+		<td>Bruce</td>
+		<td>Banner</td>
+		<td>Thaba Tseka</td>
+		<td>Roma</td>
+		<td>Honda</td>
+		<td>Fit</td>
+		<td>Black</td>
+	</tr>
+	<tr>
+		<td>Thor</td>
+		<td>Hakweye</td>
+		<td>Thetsane</td>
+		<td>Katse</td>
+		<td>Honda</td>
+		<td>Ballade</td>
+		<td>Brown</td>
+	</tr>
+	<tr>
+		<td>Skirtz</td>
+		<td>Motsoene</td>
+		<td>Katse</td>
+		<td>Hlotse</td>
+		<td>Toyata</td>
+		<td>Quantum</td>
+		<td>Grey</td>
+	</tr>
+	<tr>
+		<td>Tony</td>
+		<td>Stark</td>
+		<td>Thetsane</td>
+		<td>Roma</td>
+		<td>Volkswagen</td>
+		<td>Demio</td>
+		<td>Blue</td>
+	</tr>
+	<tr>
+		<td>PJ</td>
+		<td>Conscious</td>
+		<td>Hlotse</td>
+		<td>Mafeteng</td>
+		<td>Honda</td>
+		<td>Ballade</td>
+		<td>Black</td>
+	</tr>
+	<tr>
+		<td>Moulo</td>
+		<td>Tsewene</td>
+		<td>Maputsoe</td>
+		<td>Mafeteng</td>
+		<td>Honda</td>
+		<td>Fit</td>
+		<td>White</td>
+	</tr>
+	<tr>
+		<td>Eric</td>
+		<td>Architect</td>
+		<td>Roma</td>
+		<td>Hlotse</td>
+		<td>Toyata</td>
+		<td>Corrolla</td>
+		<td>White</td>
+	</tr>
+		<tr>
+		<td>Dax</td>
+		<td>Loki</td>
+		<td>Ha Leqele</td>
+		<td>Qwaling</td>
+		<td>Toyata</td>
+		<td>Etios</td>
+		<td>Blue</td>
+	</tr>
+</table><br>
+        <script>
+    
+                var table = document.getElementById('search');
+                
+                for(var i = 1; i < table.rows.length; i++)
+                {
+                    table.rows[i].onclick = function()
+                    {
+                         //rIndex = this.rowIndex;
+                         document.getElementById("fname").value = this.cells[0].innerHTML;
+                         document.getElementById("lname").value = this.cells[1].innerHTML;
+                         document.getElementById("fdestination").value = this.cells[2].innerHTML;
+						 document.getElementById("todestination").value = this.cells[3].innerHTML;
+						 document.getElementById("make").value = this.cells[4].innerHTML;
+						 document.getElementById("model").value = this.cells[5].innerHTML;
+						 document.getElementById("color").value = this.cells[6].innerHTML;
+                    };
+                }
+    
+         </script>
+		<form name="input" action="booknow.php" method="post" background color="red">
+		Driver_First_Name:<input type="text" name="fname" id="fname"><br><br>
+		Driver_Last_Name:<input type="text" name="lname" id="lname"><br><br>
+		FROM_Destination: <input type="text" name="fromdestination" id="fdestination"><br><br>
+		TO_Destination: <input type="text" name="todestination" id="todestination"><br><br>
+		Car_Make: <input type="text" name="make" id="make"><br><br>
+		Car_Model: <input type="text" name="model" id="model"><br><br>
+		Car_color: <input type="text" name="color" id="color"><br><br>
+		Date<input type="date" required name="date" placeholder="date picker"><p>
+		Time<input type="time" required name="time" placeholder="time of your ride"><p>
+		<button type ="submit" name="submit">Book Now</button> 
+		</form>
+		<form action="frontpage.html" method="post">
+<button type="submit">Logout</button>
+</form>
+<form action="cancel.html" method="get">
+<button type="submit">Canel</button>
+</form>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Times New Roman, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+ 
+}
+
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #00ff00;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Please login!!!</h3>
+
+<div class="container">
+<form action="viewbookings.html">
+<label for="username">Username</label>
+<input type="text" id="username" required name="username" placeholder="username"><p>
+<label for="password">Password</label>
+<input type="password" id="psw" required name="psw" placeholder="Please enter password"><p>
+<input type="submit" value="Login">
+</form>
+</body>
+</html>
